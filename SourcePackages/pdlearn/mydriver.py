@@ -9,6 +9,7 @@ from pdlearn import user_agent
 from bs4 import BeautifulSoup
 import lxml
 import os
+import sys
 import time
 import requests
 import random
@@ -73,6 +74,7 @@ class Mydriver:
         except:
             print("=" * 120)
             print("Mydriver初始化失败")
+            print(sys.path)
             print("=" * 120)
             raise
 

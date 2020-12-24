@@ -1,4 +1,6 @@
 import time
+import os
+import sys
 from sys import argv
 import random
 from pdlearn import version
@@ -583,9 +585,11 @@ def zhuanxiang(cookies, d_log, each):
         print("专项答题之前学完了")
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':s
     #  0 读取版本信息
     start_time = time.time()
+    os.chdir(os.path.dirname(sys.argv[0]))
+    print("WORKING DIR CHANGED TO ", os.path.dirname(sys.argv[0]))
 
     print("=" * 120,'''
     科技强国官方网站：https://techxuexi.js.org
